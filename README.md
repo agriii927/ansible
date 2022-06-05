@@ -12,3 +12,20 @@ Ansible is an open-source software provisioning, configuration management, and a
 - **Procedural languaged**: Procedural languages, such as Ansible and Chef, allow you to describe step-by-step execution in code, while declarative languages, such as Terraform, SaltStack, and Puppet, allow you to simply specify the desired state. 
 - **Masterless**: Languages like Chef require you to run a separate master server to provide additional control and persistent states. Other languages such as Ansible and Terraform do not need a wizard definition. 
 - **Configuration**: Ansible, Chef, SaltStack and Puppet are known as configuration management tools, which means that their main purpose is to configure resources. Other tools, such as Terraform and Pulumi, are provisioning tools, meaning that their primary purpose is to provide resources. However, as the tools evolve, their functionality may begin to overlap. 
+
+## Minimal requirements 
+### for Control/Master Server:
+- Linux only
+- Python2.6+ or Python3.5+
+### for Controlled/Managed Servers:
+#### **Linux:**
+- Admin username and password or SSH key
+- Python2.6+ 
+#### Windows:
+- Admin username and password
+- Powershell 3.0+
+- Run the [script]()
+
+## Ansible working through the following protocols/ports:
+- Linux: SSH, port 22
+- Windows: WinRM, port 5986
